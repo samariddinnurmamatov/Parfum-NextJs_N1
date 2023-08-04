@@ -27,7 +27,7 @@ export default async function Home() {
   return (
     <main style={{padding: "20px 10px"}}>
       <h2 className="container" style={{padding: "20px 10px", textAlign: "center"}}>Yangi Mahsulotlar 👇👇👇</h2>
-      <div className="all_card_category container" style={{display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "20px", justifyContent: "space-between", width: "100%"}}>
+      <div className="all_card_category container">
         {last.map((item) => (
           // Check if the item exists and has a 'title' property before rendering
           item && item.title ? (
@@ -38,7 +38,7 @@ export default async function Home() {
         ))}
       </div>
       <h2 className="container" style={{padding: "20px 10px", textAlign: "center"}}>Mahsulotlar Categoriasi 👇👇👇</h2>
-      <div className="all_card_category container" style={{display: "grid", gridTemplateColumns: "repeat(4,1fr)",gap: "20px", justifyContent: "space-between", width: "100%", padding: "20px 10px"}}>
+      <div className="all_card_category container">
         {categories.map((category) => (
           <div key={category.id} className="card_category">
             <Image className="img" width={200} height={400} src={category.images.url} alt="Image" />
