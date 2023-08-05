@@ -9,7 +9,7 @@ const Header = () => {
           <Link href="/">Parfum</Link>
         </div>
         <div className="header_linklar">
-          <Link href="/home">Home</Link>
+          <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact Us</Link>
           <Link href="/cart">Cart</Link>
