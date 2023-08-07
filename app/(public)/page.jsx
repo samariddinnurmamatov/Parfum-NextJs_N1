@@ -36,7 +36,7 @@ export default async function Home() {
       <div className="all_card_category container">
         {categories.map((category) => (
           <div key={category.id} className="card_category">
-            <Image className="img" width={200} height={400} src={category.images.url} alt="Image" />
+            <Image className="img" width={200} height={400} src={category.image.url} alt="Image" />
             <Link href={`/category/${category._id}`} style={{padding: "12px"}}>{category.name}</Link>
           </div>
         ))}

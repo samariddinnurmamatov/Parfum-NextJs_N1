@@ -1,4 +1,5 @@
 "use client";
+
 import { request } from "@/server/request";
 import { Pagination } from "antd";
 import Image from "next/image";
@@ -39,7 +40,7 @@ const CategoryPage = () => {
             style={{ border: "1px solid gray" }}
           >
             <Image
-              src={pr?.images?.url}
+              src={pr?.image?.url}
               alt="img"
               height={200}
               width={300}

@@ -1,6 +1,8 @@
 "use client";
+
 import Image from "next/image";
 import Slider from "react-slick";
+import Link from "next/link";
 
 const Slic_card = ({ lastproduc }) => {
   const settings = {
@@ -45,7 +47,8 @@ const Slic_card = ({ lastproduc }) => {
       {lastproduc.map((item) => (
           item && item.title ? (
             <div key={item.id} className="card_category2">
-              <Image className="img" width={200} height={400} src={item.images.url} alt="Image" />
+              <Image className="img" width={200} height={400} src={item.image.url} alt="Image" />
+              {/* <Link href={`/last-products/${lastproduc._id}`} style={{padding: "12px"}}>{item.title}</Link> */}
             </div>
           ) : null
         ))}
