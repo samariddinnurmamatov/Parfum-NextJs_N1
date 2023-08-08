@@ -5,7 +5,7 @@ import { request } from "@/server/request";
 
 const initialState = {
   isAuth: getCookie(TOKEN) ? true : false,
-  user: JSON.parse(localStorage.getItem(USER)) || null,
+  user: JSON.parse(localStorage.getItem("")) || null,
   loading: false,
 };
 
@@ -19,7 +19,7 @@ export const login = createAsyncThunk(
     setCookie(TOKEN, accesstoken);
     localStorage.setItem(USER, JSON.stringify(user));
 
-    if (user?.role) {
+    if (user?.role === 0) {
       router.push("/admin");
     } else {
       router.push("/");

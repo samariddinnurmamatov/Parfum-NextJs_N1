@@ -8,8 +8,8 @@ export default function PrivateLayout({ children }) {
   const router = useRouter();
   const { user, isAuth} = useSelector(state => state.auth);
   useEffect(() => {
-    if (!(user.role === 0)) {
-      router.push('/');
+    if (!(user?.role && isAuth)) {
+      router.push('/login');
     }
   })
   console.log(user, isAuth);

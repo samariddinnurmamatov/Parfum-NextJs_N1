@@ -14,5 +14,10 @@ header{
 }
 .header_flex .header_linklar{
   display: flex;
+  align-items: center;
   gap: 10px;
+}
+.header_linklar .login{
+  border: 1px solid gray;
+  padding: 4px 10px;
 }

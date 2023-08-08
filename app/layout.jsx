@@ -10,11 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { ReduxProvider } from '@/redux/provider';
 
 
-// export const metadata = {
-//   title: 'Parfum',
-//   description: 'E-commerce site for shops',
-// }
-
 export default function RootLayout({ children }) {
   return (
       <html lang="en">
